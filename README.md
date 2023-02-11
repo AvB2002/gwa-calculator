@@ -18,6 +18,6 @@ The GWA is capable of the following:
 
 ## Screenshots
 
-![Sample output #1](https://github.com/AvB2002/gwa-calculator/blob/main/screenshots/1.PNG)
+![Sample Output #1](https://github.com/AvB2002/gwa-calculator/blob/master/screenshots/1.PNG)
 
-![Sample Output #2](https://github.com/AvB2002/gwa-calculator/blob/main/screenshots/2.PNG)
+![Sample Output #2](https://github.com/AvB2002/gwa-calculator/blob/master/screenshots/2.PNG)
