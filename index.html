@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>GWA Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <i class="material-icons">cloud_queue</i>
+            <h1>GWA CALCULATOR</h1>
+        </div>
+        <div class="body">
+                <table>
+                    <thead>
+                        <th>Subject</th>
+                        <th>Number of Units</th>
+                        <th>Final Grade</th>
+                        <th></th>
+                    </thead>
+                    <tbody class="container">
+                        <tr class="row" hidden>
+                            <td><input type="hidden" name="subject" placeholder="Enter Subject"/></td>
+                            <td><input type="hidden" name="unit" placeholder="Enter Unit"/></td>
+                            <td><input type="hidden" name="grade" placeholder="Enter Grade"/></td>
+                            <td><div class="btnContainer"><button type="button" class="add"><i class="material-icons">add</i></button><button type="button" class="remove" id><i class="material-icons">remove</i></button></div></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th colspan="4"><h1 class="gwa">GWA: 0.00</h1></th>
+                    </tfoot>
+                </table>
+                <hr/>
+                <div class="footer"> 
+                    <button type="button" class="clear">Clear</button>
+                    <button type="button" class="calculate">Calculate</button>
+                </div>
+            </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>

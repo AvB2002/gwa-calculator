@@ -1,0 +1,227 @@
+:root{
+ --pesto-green: #00AA8D;
+}
+
+*, 
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(82, 78, 78);
+}
+
+body{
+    background-color:  var(--pesto-green);
+}
+
+.wrapper{
+    position: relative;
+    max-width: 730px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:150px auto;
+    background-color: white;
+    border-radius: 5px 5px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+}
+
+.header i{
+    margin: 0px 10px;
+    line-height: 50px;
+}
+
+.body{
+    display: inline-block !important;
+    width: 100%;
+}
+
+table{
+    display: block;
+    overflow-x: auto;
+    table-layout: fixed;
+    overflow-wrap: break-word; 
+    border-spacing: 0px;
+    max-width: 1200px;
+}
+
+
+thead{
+    background-color: rgb(233, 232, 232);
+    color: rgb(82, 78, 78);
+}
+
+tbody :where(input){
+    padding: 10px;
+}
+
+input{
+    text-align: center;
+    width: 100%;
+}
+
+td button{
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+button.add{
+    background-color: #11ac30;
+    border: 1px solid #ffffff;
+}
+
+button.remove{
+    background-color: #e00d0d;
+    border: 1px solid #ffffff;
+}
+
+button.add:hover{
+    background-color: #31eb56;
+}
+
+button.remove:hover{
+    background-color: #ff4747;
+}
+
+button.add:active{
+    background-color: #118027;
+}
+
+button.remove:active{
+    background-color: #8a1515;
+}
+
+.btnContainer{
+    display: inline-flex;
+}
+
+button i{
+    color: #ffffff;
+    font-size: 18px !important;
+    line-height: 1.5em !Important;
+}
+
+th, td{
+    position: relative;
+    padding: 10px;
+}
+
+table tr > td:nth-child(1) > input{
+    padding-left: 2.2em;
+    width: 305px;
+}
+
+table tr > td:nth-child(2) > input, tr > td:nth-child(3) > input{
+    width: 130px;
+}
+
+table th:nth-child(4), th:nth-child(5){
+    padding-left: 2.2em;
+    width: 130px;
+}
+
+@media screen and (max-width: 750px) {
+    table, th tr, td{
+        width: 100vw;
+    }
+    table tr {
+        display: flex;
+        flex-direction: column;
+      }
+
+    table thead{
+        display: none;
+    }
+
+    table tbody tr:nth-child(1){
+        display: none;
+    }
+
+    table tr > td:nth-child(1):before{
+        content: "Subject:";
+    }
+
+    table tr > td:nth-child(1) > input{
+        width: 100%;
+    }
+
+    table tr > td:nth-child(2):before{
+        content: "Number of Units:";
+    }
+
+    table tr > td:nth-child(2) > input{
+        width: 100%;
+    }
+
+    table tr > td:nth-child(3):before{
+        content: "Grade:";
+    }
+
+    table tr > td:nth-child(3) > input{
+        width: 100%;
+    }
+
+    .btnContainer{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+  }
+
+.footer{
+    display: flex !important;
+    justify-content: flex-end !important;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer button{
+    padding: 13px;
+    margin: 5px;
+    width: 120px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .calculate{
+    background-color: #12b733;
+    border: 0px solid #000;
+    color: #fff;
+}
+
+.footer .calculate:hover{
+    background-color: #14d73b;
+}
+
+
+.footer .calculate:active{
+    background-color: #118027;
+}
+
+.footer .clear{
+    background-color: #e00d0d;
+    border: 0px solid #000;
+    color: #fff;
+}
+.footer .clear:hover{
+    background-color: #ff4747;
+}
+
+
+.footer .clear:active{
+    background-color: #8a1515;
+}
