@@ -10,7 +10,7 @@ The GWA Calculator is capable of the following:
     - Add Subject Unit
     - Add Final Grade
 - Compute GWA from user input.
-
+- 
 ## Visit the Webpage
 [Click me to visit the GWA Calculator](https://avb2002.github.io/gwa-calculator)
 
